@@ -16,6 +16,9 @@ for key in d:
 for k, v in d.items():
     print(k, ':', v)
 
+for v in d.values():
+    print(v)
+
 # 集合 set, 集合里面的元素不能重复,
 s = set([1, 2, 3, 2])
 s.add(1)
