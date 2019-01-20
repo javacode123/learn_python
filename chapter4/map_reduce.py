@@ -74,11 +74,13 @@ else:
 # 利用map和reduce编写一个str2float函数，把字符串'123.456'转换成浮点数123.456
 DIGITS = {'0': 0, '1': 1, '2': 2, '3': 3, '4': 4, '5': 5, '6': 6, '7': 7, '8': 8, '9': 9}
 
-""""""
+
 def str2int(str):
     l = str.replace(".", "")  # 去除 .
+
     def fn(x, y):  # 转换整数
         return x * 10 + y
+
     def fn1(c):  # 字符转数字
         return DIGITS[c]
     return reduce(fn, map(fn1, l))
