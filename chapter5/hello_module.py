@@ -7,6 +7,11 @@ __author__ = "zjl"
 import sys
 
 
+# 不应该被引用 __function_name__ 但是可以被引用
+def __private__():
+    print('zjl')
+
+
 def test():
     args = sys.argv
     print(args)

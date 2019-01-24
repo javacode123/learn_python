@@ -15,6 +15,7 @@ print(l2)
 print(l2[0:10:2])  # 每两个取一个
 print(l2[::5])  # 每五个取一个
 
+
 # ======== 练习 ：实现一个trim()函数，去除字符串首尾的空格 ==========
 def trim(s):
     if len(s) <= 0 or (s[0] != ' ' and s[-1] != ' '):
@@ -28,17 +29,18 @@ def trim(s):
             return trim(s)
 
 
-if trim('hello  ') != 'hello':
-    print('1测试失败!')
-elif trim('  hello') != 'hello':
-    print('2测试失败!')
-elif trim('  hello  ') != 'hello':
-    print('3测试失败!')
-elif trim('  hello  world  ') != 'hello  world':
-    print('4测试失败!')
-elif trim('') != '':
-    print('5测试失败!')
-elif trim('    ') != '':
-    print('6测试失败!')
-else:
-    print('测试成功!')
+if __name__ == '__main__':
+    if trim('hello  ') != 'hello':
+        print('1测试失败!')
+    elif trim('  hello') != 'hello':
+        print('2测试失败!')
+    elif trim('  hello  ') != 'hello':
+        print('3测试失败!')
+    elif trim('  hello  world  ') != 'hello  world':
+        print('4测试失败!')
+    elif trim('') != '':
+        print('5测试失败!')
+    elif trim('    ') != '':
+        print('6测试失败!')
+    else:
+        print('测试成功!')

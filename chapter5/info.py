@@ -7,3 +7,4 @@ from chapter5 import hello_module
 print(slince.trim("hello "))
 hello_module.test()
 print(hello_module.__author__)
+hello_module.__private__()
