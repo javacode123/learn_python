@@ -15,7 +15,7 @@ if __name__ == '__main__':
     p = Process(target=run_proc, args=('test',))
     print('Child process will start.')
     p.start()
-    p.join(7)
+    p.join(7)  # 等待子进程结束后继续执行
     print('Child process end.')
 
 
