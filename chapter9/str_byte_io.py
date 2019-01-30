@@ -8,6 +8,7 @@ print(f.write('new line\n'))
 print(f.write('second'))
 
 print(f.getvalue())  # 用于获取写入的 str
+f.write('zjl')
 
 # 读取 stirngIo
 f = StringIO('hello \n i am : kangkang')
