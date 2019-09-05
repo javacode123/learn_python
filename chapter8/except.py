@@ -10,7 +10,7 @@ def divid(x, y):
         print('result', r)
     except ZeroDivisionError as e:
         print('except', e)
-        # log.exception(e)
+        # raise ValueError('ERROR !')
     except ValueError as e:  # 多个异常
         print('except', e)
     else:  # 没有异常会执行此段代码
@@ -18,6 +18,7 @@ def divid(x, y):
     finally:  # 不管有没有异常都执行 finally
         print('finally ...')
     print('end ...')
+
 
 # ========== 测试 ========
 from functools import reduce
@@ -48,6 +49,6 @@ if __name__ == "__main__":
     divid(4, 0)
     divid(5, 2)
     main()
-    if True:
-        raise ValueError('test error')  # 抛出错误
+    # if True:
+    #  raise ValueError('test error')  # 抛出错误
 
